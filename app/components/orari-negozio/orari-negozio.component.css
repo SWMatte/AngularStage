@@ -1,0 +1,22 @@
+thead  th {
+  padding-left: 1rem;
+}
+table,th, td{
+  border: 1px solid black;
+
+
+}
+table{
+  border-collapse: collapse;
+}
+tbody  td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

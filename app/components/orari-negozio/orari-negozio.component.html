@@ -1,0 +1,20 @@
+
+<div class="container">
+  <h3> Orari di apertura:</h3>
+</div>
+<div class="container">
+
+<table>
+  <thead>
+    <th>Orari:</th>
+    <th>Giorno:</th>
+  </thead>
+  <tbody *ngFor="let orarioNegozio of orariNegozio ">
+    <tr>
+      <td>{{orarioNegozio.ora}}</td>
+      <td>{{orarioNegozio.giorno}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>

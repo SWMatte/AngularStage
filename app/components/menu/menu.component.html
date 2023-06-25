@@ -1,0 +1,23 @@
+<mat-card class="example-card" *ngFor="let product of listProducts; index as i">
+  <div *ngIf="product.available">
+    <mat-card-header>
+      <mat-card-title
+        ><span> Nome pizza:</span> {{ product.name }}</mat-card-title
+      >
+      <mat-card-subtitle>
+        <span>Prezzo:</span> {{ product.price }}
+        <span>€</span></mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <button mat-button routerLink="/menu/{{ i }}">
+        vedi descrizione pizza
+      </button>
+    </mat-card-content>
+    <mat-card-content>
+      <button mat-button routerLink="/menu/riepilogo/{{ i }}">compra</button>
+    </mat-card-content>
+  </div>
+</mat-card>
+
+<router-outlet></router-outlet>

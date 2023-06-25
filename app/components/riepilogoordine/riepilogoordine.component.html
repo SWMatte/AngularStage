@@ -1,0 +1,12 @@
+<mat-list role="list" *ngFor="let prodotti of ordini index as i">
+  <div class="container">
+    <mat-list-item role="listitem">nome pizza: <strong>{{ prodotti.name }}</strong></mat-list-item >
+      <span> Prezzo: {{prodotti.price}}€</span>
+    <button mat-button color="warn" (click)="removePizza(i)">X</button>
+  </div>
+</mat-list>
+
+<div class="container">
+<div>Totale:{{totale}} €</div>
+</div>
+<router-outlet></router-outlet>
